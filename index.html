@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Practice App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Typing Practice</h1>
+    </header>
+    <main>
+        <div class="container" id="first">
+            <label for="text1">Enter Text: 👇</label>
+            <textarea name="text1" id="text1" maxlength="1000" placeholder="Sample Text Here..."></textarea>
+            <input type="button" value="Start" onclick="start()">
+            <div class="result">
+                <ul>
+                    <h3>Note:</h3>
+                    <li>Type !1 / !2 / !3 / !4 / !5 then press 'Enter' key for sample text.</li>
+                    <li>After inserting text click start. After typing first char the timer will be start.</li>
+                    <li>For speed and word count the words are counted as one word for 5 characters.</li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="container" id="second">
+            <label for="text2" id="lbl">Type Below Text: 👇</label>
+            <div id="result"></div>
+            <div id="sample-text" class="sample-text"></div>
+            <textarea placeholder="Start Typing Here..." name="text2" id="text2"  aria-rowcount="1"></textarea>
+            <input type="button" value="Finish" onclick="done()">
+        </div>
+    </main>
+    <footer>
+        <p>&copy; Typing Practice 2025. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

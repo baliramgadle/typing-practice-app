@@ -1,0 +1,112 @@
+*{
+ padding: 0%;   
+ margin: 0%;
+ box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    border: 5px solid #333;
+}
+
+header , footer {
+    background-color: #333;
+    padding: 0.5rem;
+    color: whitesmoke;
+    width: 100%;
+}
+
+header {
+    top: 0;
+    position: sticky;
+}
+
+footer {
+    bottom: 0;
+    text-align: center;
+    position: fixed;
+}
+
+.container {
+    background-color: whitesmoke;
+    min-height: 100px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+label , input {
+    display: block;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: blue;
+    color: whitesmoke;
+}
+
+input {
+    cursor: pointer;
+    width: 100%;
+}
+
+#text1 {
+    width: 100%;
+    min-height: 100px;
+    height: fit-content;
+    max-height: 70vh;
+    display: block;
+    resize: none;
+    background-color: antiquewhite;
+    font: inherit;
+    padding: 5px;
+    overflow-x: wrap;
+}
+
+.container:last-child {
+    display: none;
+}
+
+.sample-text, #text2 {
+    min-height: 50px;
+    height: auto;
+    border-bottom: 2px solid black;
+    padding: 5px;
+}
+
+.sample-text {
+    max-height: 50vh;
+    overflow-y: scroll;
+
+}
+#text2 {
+    background-color: antiquewhite;
+    height: 100px;
+    width: 100%;
+    padding: 5px;
+    pointer-events: none;
+    user-select: none;
+    font: inherit;
+}
+
+
+#result {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    color: purple;
+    padding: 10px;
+    border-bottom: 2px solid black;
+}
+
+ul {
+    list-style-type: disc;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    color: purple;
+}
+
+ul h3 {
+    text-decoration: underline;
+}
