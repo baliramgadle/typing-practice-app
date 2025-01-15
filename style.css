@@ -79,6 +79,10 @@ input {
     overflow-y: scroll;
 
 }
+
+.sample-text span {
+    background-color: yellow;
+}
 #text2 {
     background-color: antiquewhite;
     height: 100px;
