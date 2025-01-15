@@ -70,7 +70,7 @@ input:hover {
 
 #text1 {
     width: 100%;
-    min-height: 100px;
+    min-height: 50vh;
     max-height: 70vh;
     resize: none;
     background-color: #f7f9fc;
@@ -96,14 +96,14 @@ input:hover {
 
 .sample-text span {
     background-color: #ffeaa7;
-    padding: 0 4px;
     border-radius: 4px;
 }
 
 #text2 {
     background-color: #f7f9fc;
+    min-height: 50px;
     height: auto;
-    max-height: 200px;
+    max-height: 100px;
     width: 100%;
     padding: 10px;
     font: inherit;
