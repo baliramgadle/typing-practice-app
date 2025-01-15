@@ -109,6 +109,7 @@ input:hover {
     font: inherit;
     resize: vertical;
     border: 1px solid #ddd;
+    pointer-events: none;
 }
 
 #result {
@@ -119,6 +120,7 @@ input:hover {
     padding: 10px;
     border-bottom: 2px solid #ddd;
     border-radius: 4px;
+    overflow: wrap;
 }
 
 ul {
