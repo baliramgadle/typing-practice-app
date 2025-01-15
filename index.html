@@ -26,7 +26,13 @@
             </div>
         </div>
         <div class="container" id="second">
-            <label for="text2" id="lbl">Type Below Text: 👇</label>
+           <div class="header >
+               <div><label for="text2" id="lbl">Type Below Text: 👇</label></div>
+            <div class="font-controller">
+                 <input id="font-range" type="range" min="16" max="30" value="16"/>
+                 <div id="font-size">16px</div>
+            </div>
+           </div>
             <div id="result"></div>
             <div id="sample-text" class="sample-text"></div>
             <textarea placeholder="Start Typing Here..." name="text2" id="text2"  aria-rowcount="1"></textarea>
