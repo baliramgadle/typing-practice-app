@@ -120,7 +120,8 @@ input:hover {
     padding: 10px;
     border-bottom: 2px solid #ddd;
     border-radius: 4px;
-    flex-overflow: wrap;
+    flex-wrap: wrap;
+    gap: 5px;
 }
 
 ul {
