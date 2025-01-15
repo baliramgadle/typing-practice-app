@@ -64,6 +64,7 @@ input {
 
 .container:last-child {
     display: none;
+    font-size: 2rem;
 }
 
 .sample-text, #text2 {
