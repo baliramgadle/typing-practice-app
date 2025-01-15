@@ -90,12 +90,7 @@ function updateResult(correctChars, userInput) {
   `;
 
   text2.focus();
-  const selectionStart = text2.selectionStart;
-  const selectionEnd = text2.selectionEnd;
-
-  if (selectionStart !== selectionEnd) {
-    text2.setSelectionRange(text2.value.length, text2.value.length); 
-  }
+  text2.setSelectionRange(text2.value.length, text2.value.length);   
   
   // Stop the timer if input matches the sample text
   if (totalWords <= wordsTyped) {
