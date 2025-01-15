@@ -37,7 +37,7 @@ function done() {
   text1.value = "";
   text2.value = "";
   sample.innerHTML = "";
-  clearInterval(timer); // Stop timer
+  clearInterval(timer); 
   timer = null;
 }
 
@@ -76,9 +76,9 @@ text2.addEventListener("input", () => {
 });
 
 function updateResult(correctChars, userInput) {
-  const elapsedTime = (Date.now() - startTime) / 1000; // Time in seconds
-  const wordsTyped = text2.value.length / 5; // Approximate words typed (5 chars per word)
-  const speed = Math.round((wordsTyped / (elapsedTime / 60)) || 0); // Words per minute (WPM)
+  const elapsedTime = (Date.now() - startTime) / 1000; 
+  const wordsTyped = text2.value.length / 5; 
+  const speed = Math.round((wordsTyped / (elapsedTime / 60)) || 0); 
   const totalWords = sample.innerText.length / 5;
 
   // Display the result
@@ -90,7 +90,13 @@ function updateResult(correctChars, userInput) {
   `;
 
   text2.focus();
+  const selectionStart = text2.selectionStart;
+  const selectionEnd = text2.selectionEnd;
 
+  if (selectionStart !== selectionEnd) {
+    text2.setSelectionRange(text2.value.length, text2.value.length); 
+  }
+  
   // Stop the timer if input matches the sample text
   if (totalWords <= wordsTyped) {
     clearInterval(timer);
@@ -108,7 +114,7 @@ text2.addEventListener('select', () => {
     const selectionEnd = text2.selectionEnd;
 
     if (selectionStart !== selectionEnd) {
-      text2.setSelectionRange(text2.value.length, text2.value.length); // Move cursor to the end
+      text2.setSelectionRange(text2.value.length, text2.value.length); 
     }
   });
 
