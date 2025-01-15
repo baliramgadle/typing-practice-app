@@ -81,6 +81,25 @@ input:hover {
     overflow-wrap: break-word;
 }
 
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header label {
+    width: fit-content;
+}
+
+.header .font-controller {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+#font-range {
+    width: 25%;
+}
+
 .sample-text, #text2 {
     border-bottom: 2px solid #ccc;
     padding: 10px;
